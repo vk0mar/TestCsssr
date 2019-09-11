@@ -43,6 +43,6 @@ public class TestCsssr {
 
     @After
     public void tearDown() {
-        driver.quit();
+        if (driver!=null){driver.quit();}
     }
 }
