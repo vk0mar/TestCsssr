@@ -22,7 +22,7 @@ public class TestCsssr {
     @Before
     public void setUp() throws Exception {
         ChromeOptions options = new ChromeOptions();
-        System.setProperty("webdriver.chrome.driver", "bin\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "bin\\chromedriver");
         driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS); //неявное
         wait = new WebDriverWait(driver, 5);
